@@ -12,8 +12,8 @@ public class StackVector<T> implements Stack<T>{
   }
 
   public T Pop(){
-    vector.remove(vector.firstElement());
-    return vector.firstElement();
+    vector.remove(vector.lastElement());
+    return vector.lastElement();
   }
 
   public boolean Empty(){

@@ -1,10 +1,26 @@
 public class Calculadora implements CalculadoraGeneral {
 
   public String Calculo(String datos){
-    String s = "";
+    String[] operacion = datos.split(",");
+    int operando1 = Integer.parseInt(operacion[0]);
+    int operando2 = Integer.parseInt(operacion[2]);
 
-    return s;
+    String resultado = "";
+    switch (operacion[1]){
+      case "+":
+        resultado = String.valueOf(operando1 + operando2);
 
+      case "-":
+        resultado = String.valueOf(operando1 - operando2);
+      
+      case "/":
+        resultado = String.valueOf(operando1 * operando2);
+
+      case "*":
+        resultado = String.valueOf(operando1 / operando2);
+
+    }
+    return resultado;
   }
   
 }
