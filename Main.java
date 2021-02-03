@@ -30,16 +30,16 @@ public class Main {
                
             }
             if(num == true){
-                operation.Push(isnum);
+                operation.push(isnum);
             }else{
-                int num1 = operation.Pop();
-                int num2 = operation.Pop();
+                int num1 = operation.pop();
+                int num2 = operation.pop();
                 calcular = num1 + "," + dato + "," + num2;
                 String result = calculator.Calculo(calcular);
                 int resulta = Integer.parseInt(result);
-                operation.Push(resulta);
+                operation.push(resulta);
             }
         }
-        System.out.println(operation.Peek());
+        System.out.println(operation.peek());
     }
 }

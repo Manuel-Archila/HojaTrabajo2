@@ -7,17 +7,17 @@ public class StackVector<T> implements Stack<T>{
   }
 
 
-  public void Push(T num){
+  public void push(T num){
     vector.add(num);
   }
 
-  public T Pop(){
+  public T pop(){
     T last = vector.lastElement();
     vector.remove(vector.lastElement());
     return last;
   }
 
-  public boolean Empty(){
+  public boolean empty(){
     return vector.isEmpty();
   }
 
@@ -26,7 +26,7 @@ public class StackVector<T> implements Stack<T>{
 
   }
 
-  public T Peek(){
+  public T peek(){
     T ojo = vector.get(0);
     return ojo;
 

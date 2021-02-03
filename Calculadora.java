@@ -9,15 +9,19 @@ public class Calculadora implements CalculadoraGeneral {
     switch (operacion[1]){
       case "+":
         resultado = String.valueOf(operando1 + operando2);
+        break;
 
       case "-":
         resultado = String.valueOf(operando1 - operando2);
+        break;
       
       case "/":
         resultado = String.valueOf(operando1 * operando2);
+        break;
 
       case "*":
         resultado = String.valueOf(operando1 / operando2);
+        break;
 
     }
     return resultado;

@@ -1,13 +1,13 @@
 public interface Stack<T> {
 
-  public void Push(T num);
+  public void push(T num);
 
-  public T Pop();
+  public T pop();
 
-  public boolean Empty();
+  public boolean empty();
 
   public int size();
 
-  public T Peek();
+  public T peek();
   
 }
