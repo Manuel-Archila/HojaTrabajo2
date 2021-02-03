@@ -29,7 +29,6 @@ public class StackVector<T> implements Stack<T>{
   public T peek(){
     T ojo = vector.get(0);
     return ojo;
-
   }
   
 }
