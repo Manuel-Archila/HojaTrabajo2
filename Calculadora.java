@@ -1,5 +1,6 @@
 public class Calculadora implements CalculadoraGeneral {
 
+  //Metodo que recibe una String con los datos del realiza una operacion
   public String Calculo(String datos){
     String[] operacion = datos.split(",");
     int operando1 = Integer.parseInt(operacion[0]);
