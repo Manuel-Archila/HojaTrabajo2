@@ -1,7 +1,7 @@
 public class Calculadora implements CalculadoraGeneral {
   StackVector<Integer> stick = new StackVector<>();
 
-  //Metodo que recibe una String con los datos del realiza una operacion
+  //Metodo que recibe una String con los datos para realizar la operacion postfix
   public String Calculo(String datos){
     String[] operacion = datos.split(" ");
     String resultado = "";
@@ -22,22 +22,18 @@ public class Calculadora implements CalculadoraGeneral {
           switch (dato){
             case "+":
               resultado = String.valueOf(num1 + num2);
-              System.out.println(resultado);
               break;
 
             case "-":
               resultado = String.valueOf(num2 -num1);
-              System.out.println(resultado);
               break;
             
             case "/":
               resultado = String.valueOf(num2 / num1);
-              System.out.println(resultado);
               break;
 
             case "*":
               resultado = String.valueOf(num1 * num2);
-              System.out.println(resultado);
               break;
           }
           stick.push(Integer.parseInt(resultado));
